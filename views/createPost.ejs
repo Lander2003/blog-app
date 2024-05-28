@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create a New Post</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Luka Susha's Blog</h1>
+  </header>
+  <div class="container">
+    <h1>Create a New Post</h1>
+    <form action="/createPost" method="post">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" required><br>
+      <label for="postTitle">Title:</label>
+      <input type="text" name="postTitle" id="postTitle" required><br>
+      <label for="postcontent">Content:</label>
+      <textarea name="postcontent" id="postcontent" required></textarea><br>
+      <label for="filename">Filename:</label>
+      <input type="text" name="filename" id="filename"><br>
+      <button type="submit">Create Post</button>
+    </form>
+  </div>
+</body>
+</html>

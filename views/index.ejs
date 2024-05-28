@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog Home</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <header>
+     <h1>Luka Susha's Blog</h1>
+  </header>
+  <div class="container">
+    <h1>Welcome to the Blog</h1>
+    <ul>
+      <% newPosts.forEach(function(post) { %>
+        <li>
+          <h2><a href="/posts/<%= post._id %>"><%= post.title %></a></h2>
+          <p>By: <%= post.username %> on <%= post.date %></p>
+        </li>
+      <% }); %>
+    </ul>
+    <a href="/login">Create a new post</a>
+  </div>
+</body>
+</html>
